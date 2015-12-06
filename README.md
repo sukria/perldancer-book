@@ -43,6 +43,7 @@ The order of the chapters might change, that's why we don't number them here.
     * How this book was written
     * How to read this book
     * Beginners web programming resources
+    * How Dancer implements the MVC design pattern
     * "Ballet", a real-life application
   * Chapter X - Bootstraping the application, very first steps
     * In this chapter, we create an app from scracth and make it display our homepage
@@ -55,6 +56,12 @@ The order of the chapters might change, that's why we don't number them here.
   * Chapter X - Request Object
   * Chapter X - Response Object
   * Chapter X - Templates
+    * Out-of-the-Box - Template::Simple
+    * Why does Dancer use <% %> by default?
+    * Other Template Engines
+      * Template::Toolkit
+      * Mason2
+      * Other Template Engines
   * Chapter X - TODO Session  
     * Dancer2::Session::Simple
       * Good for development, not for production
@@ -63,6 +70,7 @@ The order of the chapters might change, that's why we don't number them here.
         * What engines are suited for this?
         * Why?
   * Chapter X - TODO Serializers
+  * Chapter X - TODO Hooks
   * Chapter X - Using Plugins
   * Chapter X - TODO Database
     * Getting started with Dancer2::Plugin::Database
@@ -72,17 +80,43 @@ The order of the chapters might change, that's why we don't number them here.
     * Why do we log?
     * What to log?
     * Where to log to?
-  * Chapter X - TODO Authentication
+  * Chapter X - TODO Authentication and Authorization (authen/authz)
     * Simple authentication with Dancer2::Plugin::Auth::Tiny
     * Role-based access with Dancer2::Plugin::Auth::Extensible
     * Using third party authentication (Facebook/Twitter/OAuth, etc.)
   * Chapter X - Deploying the app, going to production
+    * Common Deployment Configurations
+      * PSGI/Plack using Starman 
+        * nginx
+        * Apache
+        * Lighttpd
+        * Perlbal
+        * haproxy
+      * Other PSGI/Plack Servers
+        * Twiggy
+        * Corona 
+        * Etc.
+    * FastCGI
+    * CGI
+    * Running your Dancer App as a Service
+      * Linux
+        * daemontools
+        * Ubic
+        * Rolling your own
+      * OS/X
+      * Windows
   * Chapter X - Security, it matters!
     * SQL injection
     * Parameter checking
     * XSS and CSRF
     * What else???
   * Chapter X - Writing Plugins
+  * Chapter X - AJAX request handling
+  * Chapter X - Building an API using REST
+    * Rolling your own
+    * Using Dancer2::Plugin::REST
+  * Chapter X - Advanced Topics
+    * Debugging under Plack
   * Postface - PerlDancer A brief history of code
     * The genesis, how Dancer was born
     * The community behind the project, how to contribute
