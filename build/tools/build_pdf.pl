@@ -27,6 +27,6 @@ print "PDFs have been generated in build/pdf\n";
 
 sub get_chapter_list
 {
-    my $glob_path = catfile( qw( build chapters chapter_??.pod ) );
+    my $glob_path = catfile( qw( sections chapter_??.pod ) );
     return glob $glob_path;
 }
