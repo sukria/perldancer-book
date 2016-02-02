@@ -117,7 +117,7 @@ or examples/XXX.pl
 ### Running Examples
 
 * Run all examples
- `./build/tools/run.pl examples/XXX.pl`
+ * `./build/tools/run.pl examples/XXX.pl`
 
 
 ### TODO
