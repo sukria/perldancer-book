@@ -12,6 +12,10 @@ my @chapters = get_chapter_list();
 require App::pod2pdf
     or die "pod2pdf is not present in your PATH; please install App::pod2pdf\n";
 
+my $chapterpath = catdir( qw( build chapters ) );
+
+die "Please run build_chapters.pl first.\n" if ( ! -d $chapterpath );
+
 my $outpath = catdir( qw( build pdf ) );
 
 mkdir $outpath if ( ! -d $outpath ); 
@@ -27,6 +31,6 @@ print "PDFs have been generated in build/pdf\n";
 
 sub get_chapter_list
 {
-    my $glob_path = catfile( qw( sections chapter_??.pod ) );
+    my $glob_path = catfile( qw( build chapters chapter_??.pod ) );
     return glob $glob_path;
 }
