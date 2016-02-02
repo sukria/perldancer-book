@@ -104,12 +104,12 @@ You need the following Perl modules installed to build the book:
 NOTE: All steps should be run from the root of the repository.
 
 * Install build dependencies.
- `cpanm HTTP::Server::Simple Dancer Pod::PseudoPod::HTML App::pod2pdf` 
+ * `cpanm HTTP::Server::Simple Dancer Pod::PseudoPod::HTML App::pod2pdf` 
 * Build Chapters
-  `./build/tools/build_chapters.pl`
+  * `./build/tools/build_chapters.pl`
 * Build PDF or HTML
-  ** `./build/tools/build_pdf.pl` 
-  ** `./build/tools/build_html.pl`
+  * `./build/tools/build_pdf.pl` 
+  * `./build/tools/build_html.pl`
   
 The build chapters step  will replace all L<XXX> tokens by sections/XXX.pod 
 or examples/XXX.pl
