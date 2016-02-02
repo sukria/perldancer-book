@@ -93,18 +93,31 @@ The order of the chapters might change, that's why we don't number them here.
 
 You need the following Perl modules installed to build the book:
 
+  * HTTP::Server::Simple
+  * Dancer
   * Pod::PsuedoPod::HTML
+  * App::pod2pdf 
 
 
 ### Build
 
-To build the chapters:
+NOTE: All steps should be run from the root of the repository.
 
+* Install build dependencies.
+ `cpanm HTTP::Server::Simple Dancer Pod::PseudoPod::HTML App::pod2pdf` 
+* Build Chapters
   `./build/tools/build_chapters.pl`
+* Build PDF or HTML
+  ** `./build/tools/build_pdf.pl` 
+  ** `./build/tools/build_html.pl`
+  
+The build chapters step  will replace all L<XXX> tokens by sections/XXX.pod 
+or examples/XXX.pl
 
-This will replace all L<XXX> tokens by sections/XXX.pod or examples/XXX.pl
+### Running Examples
 
-To run the examples: ./build/tools/run.pl examples/XXX.pl
+* Run all examples
+ `./build/tools/run.pl examples/XXX.pl`
 
 
 ### TODO
